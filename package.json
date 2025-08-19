@@ -1,12 +1,15 @@
 {
+"homepage": "https://cgnerd143.github.io/katakana-trainer"
+
   "name": "katakana-trainer",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
